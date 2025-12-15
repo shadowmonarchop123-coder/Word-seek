@@ -2,8 +2,8 @@ import { z } from "zod";
 
 export const env = z
   .object({
-    BOT_TOKEN: z.string().min(1, { message: "BOT_TOKEN is required" }),
-    DATABASE_URL: z.string().min(1, { message: "DATABASE_URL is required" }),
+    BOT_TOKEN: z.string().min(1, { message: "8386448737:AAE5WaOBy3i1Q6JRekqYAcg6XWMiF4WNXhQ" }),
+    DATABASE_URL: z.string().min(1, { message: "mongodb+srv://bsdk:betichod@cluster0.fgj1r9z.mongodb.net/?retryWrites=true&w=majority" }),
     NODE_ENV: z.enum(["development", "production"]).default("development"),
     ADMIN_USERS: z
       .string()
